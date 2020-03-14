@@ -12,6 +12,6 @@ public abstract class Logger {
         DateFormat dateFormat = new SimpleDateFormat("HH:MM:ss:SSS");
         Date date = new Date();
         String dateNow = dateFormat.format(date);
-        System.out.printf("%d) %s [%s]: %s\n", counter++, dateNow, methodName, message);
+        System.out.printf("%d) %s [%s]: %s", counter++, dateNow, methodName, message);
     }
 }
